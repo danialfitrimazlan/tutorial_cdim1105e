@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+
+	
+
+</head>
+<body>
+
+<h2>Javascripts change content</h2>
+	<p id="abc123">I am using Javascripts to change this content</p>
+
+	<button type="button" onclick='document.getElementById("abc123").innerHTML="This is my second sentence. I use Javascripts to change here"'> CLICK HERE</button>
+
+	<h2>Javascripts change the style</h2>
+
+	<p id="denz">I am using Javascripts to change the style of this content </p>
+
+	<script>
+		function Mystyle() 
+		{
+			document.getElementById("denz").style.fontSize="55px";
+			document.getElementById("denz").style.color="blue";
+			document.getElementById("denz").style.fontFamily="Lucida";
+			document.getElementById("denz").style.backgroundColor="grey";
+		}
+	</script>
+
+	<button type="button" onclick="Mystyle()">CLICK ME</button>
+
+	<script>
+		function gambar(a)
+		{
+			var pict;
+			if(a==1)
+			{
+				pict="images/night nature.jpeg"
+			}
+			else
+			{
+				pict="images/naruto.jpeg"
+			}
+			document.getElementById('gambar').src=pict;
+
+		}
+	</script>
+
+	<h3>Javascripts do Image Manipulation</h3>
+	<img src="images/night nature.jpeg" width="200" height="200" id="gambar">
+
+	<p>
+		<button type="button" onclick="gambar(1)">Picture a</button>
+		<button type="button" onclick="gambar(3)">Picture b</button>
+	</p>
+
+	<h2>Alert Box</h2>
+	<script>
+		{
+			alert("Assalamualaikum. \n Hi guys. \n Welcome to MY Pages")
+		}
+	</script>
+
+	<iframe src="https://free.timeanddate.com/clock/ia6uv3dx/n122/tlmy40/fn12/fs16/tcf0f/pc09f/avb/ftbi/bas2/bat6/bac909/pd2/tt0/tm2/td1/th2/ts1" frameborder="0" width="273" height="21"></iframe>
+
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.9682270281146!2d101.50171522497081!3d3.0684574969072655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc53df91e6fabf%3A0x7081f0bb3c0e1066!2sUiTM%20Shah%20Alam!5e1!3m2!1sen!2smy!4v1765179688315!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

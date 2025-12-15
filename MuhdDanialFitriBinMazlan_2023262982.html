@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Exercise-Javascript</title>
+</head>
+<body>
+
+	<h2> 1) Write a script to change the HTML content of the p elemet</h2>
+
+	<p id="abc123">Welcome to My Page</p>
+
+	<button type="button" onclick='document.getElementById("abc123").innerHTML="JUST KEEP MOVING FORWARD"'> CLICK HERE</button>
+
+	<h2>2) Write a script to change the text size of the p element</h2>
+
+	<p id="denz">Hello! Welcome to faculty of Information Management</p>
+
+	<script>
+		function Mystyle() 
+		{
+			document.getElementById("denz").style.fontSize="55px";
+			document.getElementById("denz").style.color="blue";
+			document.getElementById("denz").style.fontFamily="Lucida";
+			document.getElementById("denz").style.backgroundColor="grey";
+		}
+	</script>
+
+	<button type="button" onclick="Mystyle()">CLICK ME</button>
+
+	<h2>3) Write a script to change the image attribute. You can use any two image. Please submit your image together with the sublime code</h2>
+
+	<script>
+		function gambar(a)
+		{
+			var pict;
+			if(a==1)
+			{
+				pict="images/Team UiTMCKFC.jpg"
+			}
+			else
+			{
+				pict="animation/Chart Run.gif"
+			}
+			document.getElementById('images1').src=pict;
+
+		}
+	</script>
+
+	<h3>Javascripts do Image Manipulation</h3>
+	<img src="images/Team UiTMCKFC.jpg" width="200" height="200" id="images1">
+
+	<p>
+		<button type="button" onclick="gambar(1)">Picture a</button>
+		<button type="button" onclick="gambar(3)">Picture b</button>
+	</p>
+
+	<h2>4) Using a javascript, create an alert box with the following text in three lines</h2>
+
+	<script>
+		{
+			alert("Assalamualaikum. \n Welcome to My Pages \n Four things for success: work and pray, think and believe ")
+		}
+	</script>
+
+	<h2> 5) Insert a map to KLCC</h2>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.6520581996924!2d101.71093542497118!3d3.1564329468189336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0xc955b08cfc1aae29!2sSuria%20KLCC!5e1!3m2!1sen!2smy!4v1765388958883!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
